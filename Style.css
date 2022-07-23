@@ -25,10 +25,30 @@ main{
   background: hsl(216, 50%, 16%);
   box-shadow: 0px 15px 30px hsl(216, 52%, 11%);
 }
+.img_sec{
+    position: relative;
+    padding: 0;
+}
 .nft_img {
     width: 100%;
     height: auto;
   }
+  .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(178, 100%, 50%, 0.5);
+    border-radius: 16px;
+    opacity: 0;
+}
+.overlay:hover{
+    opacity: 1;
+}
   .title {
     font-size: 24px;
     font-weight: 700;
@@ -75,5 +95,10 @@ main{
     margin-right: 10px;
   }
   .creator_sec span{
+    color: hsl(0, 0%, 100%);
+  }
+  .title:hover,
+  .creator_sec span:hover{
     color: hsl(178, 100%, 50%);
   }
+  
